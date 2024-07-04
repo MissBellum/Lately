@@ -1,0 +1,16 @@
+{
+    "livePreview.defaultPreviewPath": "/index.html",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "postgres",
+            "username": "postgres",
+            "name": "LatelyFit",
+            "password": "jiweuy78OJDNJ23kjw9UJ",
+            "connectionTimeout": 30
+        }
+    ]
+}
