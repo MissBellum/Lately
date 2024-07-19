@@ -22,8 +22,9 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('LatelyFit/', include('LatelyFit.urls')),
-    path('', RedirectView.as_view(url='LatelyFit/', permanent=True)),
+    path('home/', include('LatelyFit.urls')),
+    path('', RedirectView.as_view(url='home/', permanent=True)),
+    path('accounts/', include('django.contrib.auth.urls')),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

@@ -1,0 +1,14 @@
+#python
+# Sample code for creating a simple chatbot using ChatterBot library
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+chatbot = ChatBot('MyChatBot')
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+# Train the chatbot on English language data
+trainer.train('chatterbot.corpus.english')
+
+def get_chatbot_response(user_input):
+    response = chatbot.get_response(user_input)
+    return str(response)
